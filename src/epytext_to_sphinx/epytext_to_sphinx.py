@@ -21,7 +21,7 @@ class EpytextConverter(object):
     FUNC_DEF_START =  re.compile(r'[\s]*def[\s]+[^\(]*\([^\)]*\)[\s]*:[\s]*$')
     # Docstring symbol on a line of its own: three single-quotes
     DOCSTRING_START_OR_END = re.compile(r'[\s]*\'\'\'[\s]*$')
-    PARAM_SPEC = re.compile(r'[\s]*@(return:|(param|type|rtype)[^:]+:)')
+    PARAM_SPEC = re.compile(r'[\s]*@(return:|rtype:|(param|type)[^:]+:)')
     BLANK_LINE = re.compile(r'^[\s]*$')
 
     def __init__(self, directoryOrFile):
