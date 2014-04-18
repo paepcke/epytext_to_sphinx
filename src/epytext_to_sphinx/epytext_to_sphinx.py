@@ -74,10 +74,10 @@ class EpytextConverter(object):
         into fullFilePathDest. That dest file will be overwritten
         if it exists.
         
-        @param fullFilePathSrc: file to be converted from epytext to Sphinx autodoc syntax.
-        @type fullFilePathSrc: str
-        @param fullFilePathDest: destination file name
-        @type fullFilePathDest: src
+        :param fullFilePathSrc: file to be converted from epytext to Sphinx autodoc syntax.
+        :type fullFilePathSrc: str
+        :param fullFilePathDest: destination file name
+        :type fullFilePathDest: src
         '''
         inDocstring = False
         prevLineWasEmpty = False
